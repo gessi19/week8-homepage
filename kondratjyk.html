@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="style" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <!-- Side navigation -->
+        <div class="sidenav">
+            <a href="index.html">Головна</a>
+            <a href="hystory_rocket.html">Історія ракет</a>
+            <button class="dropdown-btn">Першопрохідці
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                <a href="zasjadko.html">Засядько Олександр Дмитрович</a>
+                <a href="tsiolkoskyj.html">Ціолковський Костянтин Едуардович</a>
+                <a href="kondratjyk.html">Кондратюк Юрій Васильович</a>
+                <a href="fonbraun.html">Вернер фон Браун</a>
+
+              </div>
+            <a href="#">Типи ракет</a>
+        </div>
+
+        <!-- Page content -->
+        <div class="main">
+            <h1 style="text-align:center;">Кондратюк Юрій Васильович</h1>
+                <img src="kondratjyk.jpg" alt="kondratjyk">
+                <p>Ю́рій Васи́льович Кондратю́к (справжнє ім'я Шаргей Олександр Гнатович; нар. 9 (21) червня 1897, Полтава, Україна — місце та дата смерті невідомі, не раніше 1942) — український учений-винахідник, один із піонерів ракетної техніки й теорії космічних польотів.
+                  Автор так званої «траси Кондратюка», якою подорожували на Місяць космічні кораблі «Аполлон».</p>
+                <p>Народився в Полтаві. Мати, Людмила Львівна Шаргей (у дівоцтві баронеса[3] Шліпенбах гербу «Шліпенбах»), — викладачка французької мови, батько, Ігнатій Бенедиктович Шаргей, — католицького[3] віросповідання, студент Київського університету.
+                  Вихованням маленького Олександра займались його бабуся Катерина Кирилівна і нерідний дід, її другий чоловік Яким Микитович Даценко, син священиків з села Мала Павлівка, колишньої Грунської сотні.
+                  У місті Яким Даценко людина відома — колишній земський лікар міста Зінькова, та ще статський радник, який служить у казначействі. Нерідко сам Яким Микитович, один або з Панасом Мирним відправлявся в Полтаві на Малу Садову вулицю, де жив Володимир Галактіонович Короленко.
+                  Мати Олександра Шаргея хворіла й не виходила з психіатричної лікарні. Батько Олександра ж, з категорії «вічних студентів», навчався у Німецькій імперії. Олександр Шаргей писав в автобіографічній анкеті про своїх батьків таке: «…меня вырастил неродной дедушка».
+                  Після повернення до Російської імперії 1906 року батько, Ігнатій Бенедиктович, забрав із собою сина до столиці імперії Санкт-Петербургу.</p>
+        </div>
+        <script>
+            /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+
+            for (i = 0; i < dropdown.length; i++) {
+              dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                  dropdownContent.style.display = "none";
+                } else {
+                  dropdownContent.style.display = "block";
+                }
+              });
+            }
+            </script>
+    </body>
+</html>
+

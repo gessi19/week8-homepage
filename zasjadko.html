@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="style" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <!-- Side navigation -->
+        <div class="sidenav">
+            <a href="index.html">Головна</a>
+            <a href="hystory_rocket.html">Історія ракет</a>
+            <button class="dropdown-btn">Першопрохідці
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                <a href="zasjadko.html">Засядько Олександр Дмитрович</a>
+                <a href="#">Ціолковський Костянтин Едуардович</a>
+                <a href="#">Кондратюк Юрій Васильович</a>
+                <a href="#">Вернер фон Браун</a>
+                <a href="#">Роберт Годдард</a>
+              </div>
+            <a href="#">Типи ракет</a>
+        </div>
+
+        <!-- Page content -->
+        <div class="main">
+            <h1 style="text-align:center;">Засядько Олександр Дмитрович</h1>
+                <img src="zasjadko.jpg" alt="zasjadko">
+                <p>Олекса́ндр Дми́трович Зася́дько (1779 с. Лютенька — 8 червня 1837, Харків) — інженер-артилерист Російської імператорської армії, українського походження, генерал-лейтенант артилерії. Конструктор та фахівець з розробки ракетної зброї.</p>
+                <p>Народився в с. Лютенька Гадяцького полку (нині Полтавської області) в козацькій родині Засядьків.</p>
+                <p>Нащадок старовинного козацького роду. Прапрадід, Яків Засядько був реєстровим козаком Хорольської сотні і Лубенським полковником (1659). Прадід Лук’ян Якович і дід Данило Лук’янович – сотники Лютенської сотні (1-ша пол. XVIII ст.).
+                    Батько Олександра, Дмитро Данилович Засядько був головним гармашем Запорозької Січі, доводився родичем кошовому отаманові Петрові Калнишевському </p>
+                <p>Освіту здобував в Артилерійському і Інженерному шляхетському кадетському корпусі. Брав участь в італійському поході[ru] Суворова, служив під командуванням Кутузова, штурмував Ізмаїл. Учасник російсько-турецької, французько-російської та інших воєн.
+
+                    Від 1815 року, продавши маєток біля Одеси, за виручені кошти розпочав експерименти зі створення ракетної зброї. Першим (1817) створив кілька типів бойових порохових ракет та спеціальний пусковий пристрій, зорганізував їхнє виробництво і розробив тактику використання. Очолював Артилерійське училище, Охтинський пороховий завод[ru] та Гарматний ливарний двір.
+
+                    Розроблені ним ракети мали дальність до 2670 метрів[2] (приблизно як і у тогочасних англійських ракет Конгріва — до 2 700). Вперше в світі побудував ракетну пускову установку, що дозволяла вести одночасне ураження шістьма ракетами (прообраз сучасних РСЗВ).
+
+                    Сконструювавши пускові станки, що дозволяли вести залповий вогонь та пристрої прицілювання до них, розробив тактику бойового застосування ракетної зброї в РІА. Заснував перший в імперії ракетний завод (Петербург), який 1864 р. перевели до Миколаєва, та Вище артилерійське училище. Створивши «Ракетну роту № 1», започаткував створення нового виду збройних сил. 1827 року був призначений начальником штабу артилерії.
+
+                    Першу ракетну атаку продемонстрував в червні 1828 року під час російсько-турецької війни в штурмі фортеці Бреїла (нині Румунія). Атака була надзвичайно успішною — ворог здався й відступив. Потім були бомбардування Сілістри та Варни, що остаточно переконало і прихильників, і опонентів Засядька в ефективності нової зброї.</p>
+        </div>
+        <script>
+            /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+
+            for (i = 0; i < dropdown.length; i++) {
+              dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                  dropdownContent.style.display = "none";
+                } else {
+                  dropdownContent.style.display = "block";
+                }
+              });
+            }
+            </script>
+    </body>
+</html>
+

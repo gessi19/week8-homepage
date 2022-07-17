@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="style" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <!-- Side navigation -->
+        <div class="sidenav">
+            <a href="index.html">Головна</a>
+            <a href="hystory_rocket.html">Історія ракет</a>
+            <button class="dropdown-btn">Першопрохідці
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                <a href="zasjadko.html">Засядько Олександр Дмитрович</a>
+                <a href="tsiolkoskyj.html">Ціолковський Костянтин Едуардович</a>
+                <a href="kondratjyk.html">Кондратюк Юрій Васильович</a>
+                <a href="fonbraun.html">Вернер фон Браун</a>
+              </div>
+            <a href="#">Типи ракет</a>
+        </div>
+
+        <!-- Page content -->
+        <div class="main">
+            <h1 style="text-align:center;">Загальні поняття ракетобудування
+                <img src="rocket.png" alt="rocket"></h1>
+                <p>
+                Раке́та (італ. rocchetta — «маленьке веретено», нім. rakete) — літальний апарат, що рухається в просторі за рахунок дії реактивного руху, що виникає внаслідок відкидання частини власної маси (робочого тіла) апарату без використання речовини з навколишнього середовища.</p>
+                <p>
+                Оскільки політ ракети не вимагає обов'язкової наявності навколишнього повітряного або газового середовища, то рух ракети можливий не тільки в атмосфері, але й у вакуумі. Словом ракета позначають широкий спектр летючих пристроїв від святкової петарди до космічної ракети-носія.</p>
+        </div>
+        <script>
+            /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+
+            for (i = 0; i < dropdown.length; i++) {
+              dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                  dropdownContent.style.display = "none";
+                } else {
+                  dropdownContent.style.display = "block";
+                }
+              });
+            }
+            </script>
+    </body>
+</html>
